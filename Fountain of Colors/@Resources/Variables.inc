@@ -1,0 +1,43 @@
+[Variables]
+Bands=25
+BarGap=9
+BarWidth=3
+BarHeight=139
+MinBarHeight=1
+PaletteColor1=255,255,255
+FFTSize=3000
+FFTBufferSize=8192
+FFTAttack=500
+FFTDecay=500
+FreqMin=29.1352350948806
+FreqMax=24000
+Sensitivity=35.4600254412748
+AverageSize=
+Colors=Wallpaper
+PaletteColor2=96,160,224
+PaletteColor3=255,160,160
+PaletteColor4=240,240,240
+TransitionTime=12
+hBlendingMultiplier=0
+vBlendingMultiplier=0
+OpacityLower=255
+OpacityUpper=255
+OpacityMultiplier=1
+DecayEffect=0
+DecayThreshold=55
+DecaySustain=365
+DecayDuration=635
+DecayOpacityMin=0
+DecayOpacityMax=255
+ColorsExclude=
+ModeKeyboard=0
+FirstBandIndex=1
+; !!! DO NOT CHANGE BELOW
+SkinGroup=FountainOfColors
+Config=Fountain of Colors
+SetCloneColorState=[!CommandMeasure ScriptColorChanger """AddChild("[CurrentConfig]","#Invert#"~=1 and 0 or 1)""" "Fountain of Colors"]
+Angle=
+Invert=
+Channel=
+Port=
+ID=

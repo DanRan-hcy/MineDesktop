@@ -1,0 +1,28 @@
+[Rainmeter]
+Update=4000
+Group=FountainOfColors
+ContextTitle="Options..."
+ContextAction=[!ActivateConfig "Fountain of Colors\Options"]
+OnRefreshAction=[!WriteKeyValue Variables Angle "#Angle#" "#@#Variables.inc"][!WriteKeyValue Variables Invert "#Invert#" "#@#Variables.inc"][!WriteKeyValue Variables Channel "#Channel#" "#@#Variables.inc"][!WriteKeyValue Variables Port "#Port#" "#@#Variables.inc"][!WriteKeyValue Variables ID "#ID#" "#@#Variables.inc"][!WriteKeyValue Variables Config "#CURRENTCONFIG#" "#@#Variables.inc"][!ActivateConfig "Fountain of Colors\Initialize"]
+
+[Audio]
+Measure=Plugin
+Plugin=AudioLevelBeta
+Port=
+ID=
+Channel=
+FFTSize=3000
+FFTBufferSize=8192
+FFTAttack=500
+FFTDecay=500
+Bands=25
+FreqMin=29.1352350948806
+FreqMax=24000 
+Sensitivity=35.4600254412748
+Type=BufferStatus
+OnUpdateAction=[!UpdateMeasureGroup Audio][!UpdateMeterGroup Bars][!Redraw][!UpdateMeasure ScriptColorChanger]
+
+[Include]
+@Include2=
+@Include3=
+@Include4=ColorChangerInc
